@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-nunito">
+
+    <div class="h-[80vh] lg:h-screen bg-gradient-to-t from-indigo-300 relative overflow-hidden ">
+        <nav class="w-full bg-white fixed top-0 z-10 ">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+               <div class="flex ">
+                 <img class="w-14" src="./tailogo.png" alt="">
+                 <span class="text-2xl">Stephen</span>
+               </div>
+
+               <ul class="hidden md:flex space-x-10 text-sm uppercase font-semibold">
+                <li class="hover:text-blue-500"><a href="">Home</a></li>
+                <li class="hover:text-blue-500"><a href="">About</a></li>
+                <li class="hover:text-blue-500"><a href="">Services</a></li>
+                <li class="hover:text-blue-500"><a href="">Product</a></li>
+                <li class="hover:text-blue-500"><a href="">Contact</a></li>
+               </ul>
+
+               <img class="hidden md:block w-10" src="./img/moon.png" alt="">
+
+               <div id="menu-icon" class="text-3xl md:hidden cursor-pointer z-10  mr-2  ">
+                <i class="fa-solid fa-bars " ></i>
+            </div>
+
+            <ul id="navbar" class="md:hidden bg-indigo-900 rounded-b-xl p-5 absolute top-0 left-0 w-full space-y-10 text-white text-center hidden   ">
+                <li class="hover:text-blue-500"><a href="">Home</a></li>
+                <li  class="hover:text-blue-500"><a href="">About</a></li>
+                <li  class="hover:text-blue-500"><a href="">Services</a></li>
+                <li class="hover:text-blue-500"><a href="">Product</a></li>
+                <li class="hover:text-blue-500"><a href="">Contact</a></li>
+               </ul>
+
+
+            
+            </div>
+        </nav>
+
+      <div class="h-5/6 md:w-[1000px] absolute left-0 mx-auto lg:right-[200px] bottom-0">
+        <img class="" src="./img/man.png" alt="">
+      </div>
+
+      <div class="hidden lg:block absolute w-[48rem] h-[48rem] rounded-full bg-indigo-900 -bottom-1/4 right-0 left-0 mx-auto -z-10"></div>
+
+
+
+      <div class="absolute top-[200px] left-[15px] text-[20px] md:text-4xl md:left-[60px] lg:text-6xl lg:left-[10px]">
+        <h3>Alu Stephen</h3>
+        <h3>Web Developer</h3>
+    </div>
+
+
+    <div class="hidden md:hidden lg:block bg-white absolute top-[150px] right-[10px] w-[400px] rounded-lg p-3 mx-auto space-y-2 flex-wrap   ">
+        <h3>Hi I'm Stephen </h3>
+        <p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolorum et labore voluptatibus vel illo, distinctio nemo itaque iusto error ipsum non, consequuntur dolorem enim. Delectus iusto laborum inventore ea.</p>
+         <button class="bg-blue-600 py-2 px-3 rounded-lg text-white " >Hire me</button>
+    </div>
+    </div>
+
+   <!-- About Section -->
+<div class="py-5">
+    <div class="container mx-auto flex flex-col-reverse py-40 md:flex-row items-center gap-20  ">
+        <div class="rounded-full h-full overflow-hidden md:w-[1000px] ">
+            <img src="./img/portrait.png" alt="">
+        </div>
+
+        <div class="my-auto text-xl flex flex-col gap-3 px-5"   >
+            <h1 class="bg-blue-900 text-white px-3 py-2 rounded-lg w-fit text-center">About Me</h1>
+            <h1>Better Design</h1>
+            <h1>Better Experience</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, praesentium nostrum ratione molestiae veritatis distinctio soluta deleniti amet corrupti quibusdam reiciendis dolorem cupiditate, libero neque earum sed nesciunt velit magnam.</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="">
+    <div class="container mx-auto text-center gap-2 space-y-2">
+        <h1 class="bg-blue-900 px-3 py-2 w-fit mx-auto text-white rounded-lg ">Services</h1>
+        <h1>What do I offer?</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi?</h2>
+
+
+        <div class="mx-auto space-y-10 my-20 flex flex-wrap">
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         <div class="text-start flex flex-col gap-2 px-5 shadow-xl rounded-lg w-full md:w-6/12 lg:w-4/12">
+            <img class="w-10" src="./img/icon.png" alt="">
+            <h1>UX/UI Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique.</p>
+            <a class="text-blue-600" href="">Show More</a>
+            
+         </div>
+
+         
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+
+<div class="mx-auto my-40">
+    <div class="container mx-auto text-center flex flex-col  ">
+       <h1 class="bg-blue-900 px-3 py-2 text-white rounded-lg w-fit mx-auto">Portfolio</h1>
+       <h1>Works and Projects</h1>
+       <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptates?</h2>
+
+       <div class="p-5 mx-auto my-20 flex flex-wrap justify-between">
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+
+        <div class="w-full md:w-3/12 lg:w-1/5 my-3 md:my-10 shadow-lg m-1">
+            <img class="" src="./img/item.png" alt="">
+        </div>
+       </div>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div>
+    <div class="container mx-auto p-5 text-center">
+      <h1 class="bg-blue-900 text-white rounded-lg w-fit mx-auto px-3 py-2 text-xl my-2">Contact</h1>
+      <h1 class="my-2">Do You Have a Question?</h1>
+      <h1 class="font-light my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quas?</h1>
+        <div class="my-3">
+        <form class="  flex flex-col items-center justify-center" action="">
+         <input class="w-full my-3 ring-1 py-2 px-2 md:w-1/2 lg:w-1/2" type="text" placeholder="Name">
+         <input class="w-full my-3 ring-1 py-2 px-2 md:w-1/2 lg-w-1/2 " type="email" placeholder="Email">
+         <textarea class="w-full my-3 ring-1 md:wd-1/2 lg:w-1/2" name="" id="" cols="30" rows="10"></textarea>
+         <button class="bg-blue-900 text-white w-1/3 rounded-lg py-2 px-3 ">Submit</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+
+    
+        <footer class="w-full bg-gray-800 top-0  ">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+               <div class="flex ">
+                 <img class="w-14" src="./tailogo.png" alt="">
+                 <span class="text-2xl text-white">Stephen</span>
+               </div>
+
+               <p class="text-white hidden md:block">Website Created by Alu Stephen</p>
+
+
+               <div class="mr-3 text-xl space-x-3">
+                <i class="fa-brands fa-facebook text-blue-500"></i>
+                <i class="fa-brands fa-whatsapp text-green-600"></i>
+                <i class="fa-brands fa-twitter text-blue-600"></i>
+                <i class="fa-brands fa-linkedin text-blue-600"></i>
+               </div>
+               
+            
+
+
+            
+            </div>
+        </footer> 
+
+</body>
+</html>
